@@ -37,10 +37,10 @@ module RMeetup
         self.event['rsvpcount'].to_i
       end
       def updated
-        DateTime.strptime(self.event['updated'].to_s,'%s')
+        DateTime.strptime(self.event['updated'].to_s[0...-3],'%s')
       end
       def time
-        DateTime.strptime(self.event['time'].to_s,'%s')
+        DateTime.strptime(self.event['time'].to_s[0...-3],'%s')
       end
     end
   end
