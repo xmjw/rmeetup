@@ -43,7 +43,9 @@ module RMeetup
         DateTime.strptime(self.event['time'].to_s[0...-3],'%s')
       end
       def duration
-        self.event['duration']/1000
+        d = self.event['duration']
+        d = d/1000 if d.class == Fixnum
+        d
       end
     end
   end
