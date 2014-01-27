@@ -42,6 +42,9 @@ module RMeetup
       def time
         DateTime.strptime(self.event['time'].to_s[0...-3],'%s')
       end
+      def duration
+        self.event['duration']/1000
+      end
     end
   end
 end
