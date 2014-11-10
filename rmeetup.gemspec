@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'rmeetup'
-  s.version     = '2.0.1'
-  s.date        = '2013-12-31'
+  s.version     = '2.0.2'
+  s.date        = '2014-11-10'
   s.summary     = "A simple Ruby gem, providing access to the Meetup API"
   s.description = "An update to this Gem to support the Meetup API version 2.0 "
   s.authors     = ["Jason Berlinsky","Michael Wawra"]
