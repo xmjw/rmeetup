@@ -21,4 +21,5 @@ PLATFORMS
 
 DEPENDENCIES
   json
-  rspec
+  rspec (>= 3.0.0)
+  rspec-expectations (>= 3.0.0)
